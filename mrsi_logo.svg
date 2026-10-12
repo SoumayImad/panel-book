@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="409" height="391" viewBox="0 0 409 391">
+  <rect width="409" height="391" fill="#112A43"/>
+
+  <!-- Outer circle -->
+  <circle cx="202" cy="190" r="158" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+
+  <!-- MRSI wordmark -->
+  <g fill="#FFFFFF">
+    <!-- M -->
+    <path d="M80 221V144h18l28 33 28-33h1v77h-19v-45l-10 12-10 11-10-11-10-12v45H80z"/>
+    <!-- R -->
+    <path d="M163 144h48c10 0 17 3 17 14v23c0 9-5 13-13 14l17 26h-21l-19-25h-29v-17h47v-18h-47v-17zm0 0z"/>
+    <!-- S -->
+    <path d="M236 144h60v17h-60v-17zm0 30h60v17h-60v-17zm0 30h60v17h-60v-17z"/>
+    <!-- I -->
+    <path d="M307 122h16v20h-16v-20zm0 28h16v71h-16v-71z"/>
+  </g>
+
+  <!-- Tagline -->
+  <text x="202" y="254"
+        text-anchor="middle"
+        fill="#FFFFFF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="15"
+        letter-spacing="0.4">
+    Market Research Society of India
+  </text>
+</svg>

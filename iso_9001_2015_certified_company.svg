@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="404" height="404" viewBox="0 0 404 404">
+  <defs>
+    <path id="topArc" d="M 92,173 A 116,116 0 0 1 312,173" fill="none"/>
+    <path id="bottomArc" d="M 312,236 A 116,116 0 0 1 92,236" fill="none"/>
+  </defs>
+
+  <!-- Background -->
+  <rect width="404" height="404" fill="#112A43"/>
+
+  <!-- Outer badge -->
+  <circle cx="202" cy="197" r="158" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+  <circle cx="202" cy="197" r="98" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5"/>
+  <circle cx="202" cy="197" r="99" fill="none" stroke="#112A43" stroke-width="3"/>
+
+  <!-- Curved text -->
+  <g fill="#FFFFFF"
+     font-family="Arial, Helvetica, sans-serif"
+     font-weight="700"
+     font-size="43"
+     letter-spacing="3">
+    <text>
+      <textPath href="#topArc" startOffset="50%" text-anchor="middle">CERTIFIED</textPath>
+    </text>
+    <text font-size="37" letter-spacing="2">
+      <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">COMPANY</textPath>
+    </text>
+  </g>
+
+  <!-- Center ISO mark -->
+  <text x="202" y="207"
+        text-anchor="middle"
+        fill="#112A43"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="67"
+        font-weight="900">ISO</text>
+
+  <text x="202" y="237"
+        text-anchor="middle"
+        fill="#112A43"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="24"
+        font-weight="700"
+        letter-spacing="0.5">9001:2015</text>
+</svg>
