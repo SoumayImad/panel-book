@@ -2059,8 +2059,8 @@ p {
     font-size: 9.5pt;
 }
 
-/* Professional Functions Table (Page 07) */
-#page-07 .page-body {
+/* Professional Functions Table (Page 08) */
+#page-08 .page-body {
     padding: 13mm 16mm 14mm;
 }
 
@@ -2100,8 +2100,8 @@ p {
     font-weight: 750;
 }
 
-/* Seniority & Title Distribution Table (Page 08) */
-#page-08 .page-body {
+/* Seniority & Title Distribution Table (Page 09) */
+#page-09 .page-body {
     padding: 13mm 16mm 14mm;
 }
 
@@ -2144,8 +2144,8 @@ p {
     border: 1px solid #a7f3d0;
 }
 
-/* High-Value Specialist Profiles Table (Page 09) */
-#page-09 .page-body {
+/* High-Value Specialist Profiles Table (Page 10) */
+#page-10 .page-body {
     padding: 10.5mm 16mm 11mm;
 }
 
@@ -2174,6 +2174,17 @@ p {
     font-size: 7.1pt;
     font-weight: 600;
     color: #1e293b;
+}
+
+.specialist-table tr.total-row td {
+    font-size: 7.1pt;
+    padding: 3.5px 6px;
+    line-height: 1.2;
+}
+
+.specialist-table tr.total-row .num-col {
+    font-size: 7.1pt;
+    color: var(--blue-dark);
 }
 
 .eco-pill {
@@ -2959,6 +2970,262 @@ p {
     font-size: 15px;
 }
 
+/* ============================================================
+   METHODOLOGY MATRIX ARCHITECTURE (PAGE 03)
+   ============================================================ */
+
+.methodology-matrix-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin-top: 6px;
+    box-sizing: border-box;
+}
+
+.matrix-pillar {
+    background: #ffffff;
+    border: 1px solid var(--border, #dedede);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.pillar-header {
+    padding: 7px 10px 6px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.pillar-tag-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pillar-badge {
+    font-size: 6.8pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 2px 6px;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.pillar-count {
+    font-size: 6.8pt;
+    font-weight: 700;
+    color: #64748b;
+}
+
+.pillar-title {
+    font-size: 8.4pt;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+/* Pillar Color Themes */
+.pillar-qual {
+    border-top: 3.5px solid #0284c7;
+}
+
+.pillar-qual .pillar-header {
+    background: #f0f9ff;
+}
+
+.pillar-qual .pillar-badge {
+    color: #0369a1;
+    background: #e0f2fe;
+    border: 1px solid #bae6fd;
+}
+
+.pillar-qual .format-icon-box {
+    background: #e0f2fe;
+    color: #0284c7;
+    border: 1px solid #bae6fd;
+}
+
+.pillar-qual .format-chip {
+    color: #0369a1;
+    background: #e0f2fe;
+}
+
+.pillar-quant {
+    border-top: 3.5px solid #0052d6;
+}
+
+.pillar-quant .pillar-header {
+    background: #f8fafc;
+}
+
+.pillar-quant .pillar-badge {
+    color: #0052d6;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+}
+
+.pillar-quant .format-icon-box {
+    background: #eff6ff;
+    color: #0052d6;
+    border: 1px solid #bfdbfe;
+}
+
+.pillar-quant .format-chip {
+    color: #0052d6;
+    background: #eff6ff;
+}
+
+.pillar-custom {
+    border-top: 3.5px solid #ea580c;
+}
+
+.pillar-custom .pillar-header {
+    background: #fffbeb;
+}
+
+.pillar-custom .pillar-badge {
+    color: #b45309;
+    background: #fef3c7;
+    border: 1px solid #fde68a;
+}
+
+.pillar-custom .format-icon-box {
+    background: #fff7ed;
+    color: #ea580c;
+    border: 1px solid #fed7aa;
+}
+
+.pillar-custom .format-chip {
+    color: #c2410c;
+    background: #ffedd5;
+}
+
+.pillar-cards {
+    padding: 8px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    flex: 1;
+}
+
+.format-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 7px 8.5px;
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+    min-height: 52px;
+}
+
+.format-icon-box {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8.5pt;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.format-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.format-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.format-name {
+    font-size: 7.8pt;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.25;
+    white-space: normal;
+    word-break: normal;
+}
+
+.format-chip {
+    font-size: 6.0pt;
+    font-weight: 700;
+    padding: 1px 4.5px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-top: 0.5px;
+}
+
+.format-desc {
+    font-size: 7.0pt;
+    color: #64748b;
+    line-height: 1.25;
+    margin-top: 2.5px;
+}
+
+/* Delivery Reassurance / Spec Box */
+.format-spec-callout {
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 6px;
+    padding: 7px 8.5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    min-height: 52px;
+}
+
+.fsc-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    background: #f1f5f9;
+    color: #475569;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8.5pt;
+    flex-shrink: 0;
+}
+
+.fsc-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.fsc-title {
+    font-size: 7.6pt;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1.2;
+}
+
+.fsc-sub {
+    font-size: 6.8pt;
+    color: #64748b;
+    line-height: 1.25;
+    margin-top: 1.5px;
+}
+
 /* Data Visual Bar Utility */
 .data-bar-cell {
     display: inline-flex;
@@ -3086,6 +3353,20 @@ p {
     cursor: pointer;
 }
 
+.map-speech-bubble {
+    cursor: pointer;
+    transition: transform 0.16s cubic-bezier(0.16, 1, 0.3, 1), filter 0.16s ease;
+}
+
+.map-speech-bubble:hover {
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.22));
+}
+
+.map-speech-bubble:hover rect,
+.map-speech-bubble:hover polygon {
+    stroke-width: 1.5px;
+}
+
 /* ============================================================
    PAGE 05 - 31 EXPERT ECOSYSTEMS TREE GRAPH
    ============================================================ */
@@ -3179,11 +3460,45 @@ p {
     margin-top: 6px;
 }
 
-#page-05 .tree-category-node:not(:last-child) {
-    margin-bottom: 12px;
+#page-06 .ecosystem-tree-wrap {
+    margin-top: 8px;
+}
+
+#page-06 .tree-root-box {
+    padding: 11px 18px;
+}
+
+#page-06 .tree-root-badge {
+    font-size: 9.0pt;
+}
+
+#page-06 .tree-root-stats .trs-val {
+    font-size: 10.5pt;
+}
+
+#page-06 .tree-categories-list {
+    margin-top: 9px;
 }
 
 #page-06 .tree-category-node:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+#page-06 .tree-cat-header {
+    padding: 6.5px 11px;
+}
+
+#page-06 .tch-title {
+    font-size: 8.8pt;
+}
+
+#page-06 .tch-tag {
+    width: 18px;
+    height: 18px;
+    font-size: 7.5pt;
+}
+
+#page-07 .tree-category-node:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -3276,11 +3591,12 @@ p {
     margin-top: 5px;
 }
 
-#page-05 .tree-branch-stem {
-    gap: 6px;
+#page-06 .tree-branch-stem {
+    margin-top: 6px;
+    gap: 7.5px;
 }
 
-#page-06 .tree-branch-stem {
+#page-07 .tree-branch-stem {
     gap: 3.5px;
 }
 
@@ -3324,11 +3640,36 @@ p {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
 }
 
-#page-05 .leaf-content {
-    padding: 4.8px 9px;
+#page-06 .leaf-content {
+    padding: 6.0px 10.5px;
 }
 
-#page-06 .leaf-content {
+#page-06 .leaf-icon {
+    width: 21px;
+    height: 21px;
+    font-size: 8.0pt;
+}
+
+#page-06 .leaf-name {
+    font-size: 8.0pt;
+}
+
+#page-06 .leaf-kpi {
+    padding: 1.8px 6px;
+    font-size: 7.2pt;
+}
+
+#page-06 .leaf-seniority-chips {
+    padding: 1.8px 6.5px;
+    font-size: 6.8pt;
+}
+
+#page-06 .footnote-callout {
+    margin-top: 10px;
+    padding: 7px 12px;
+}
+
+#page-07 .leaf-content {
     padding: 3.5px 8.5px;
 }
 
@@ -3506,4 +3847,119 @@ p {
     --cat-accent: #0d9488;
     --cat-bg: #f0fdfa;
     --cat-border: #99f6e4;
+}
+
+/* ============================================================
+   PAGE 11 - EXPERT PROFILES CARD GRID (Replaces Radial Hub)
+   ============================================================ */
+
+.expert-profiles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 8px;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
+}
+
+.profile-card {
+    flex: 0 0 calc(25% - 6px);
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 7px;
+    padding: 7px 9px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
+    box-sizing: border-box;
+    min-height: 48px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.profile-card:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.06);
+    transform: translateY(-1px);
+}
+
+.prc-icon-box {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10pt;
+    flex-shrink: 0;
+}
+
+.prc-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.prc-title {
+    font-size: 8.0pt;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.25;
+    white-space: normal;
+    word-break: normal;
+}
+
+.prc-desc {
+    font-size: 6.8pt;
+    font-weight: 500;
+    color: #64748b;
+    line-height: 1.2;
+    margin-top: 1.5px;
+    white-space: normal;
+}
+
+/* Multi-color Thematic Accents for Role Icons */
+.prc-icon--teal {
+    background: #f0fdfa;
+    color: #0d9488;
+    border: 1px solid rgba(13, 148, 136, 0.25);
+}
+
+.prc-icon--navy {
+    background: #f1f5f9;
+    color: #0f172a;
+    border: 1px solid rgba(15, 23, 42, 0.2);
+}
+
+.prc-icon--coral {
+    background: #fff1f2;
+    color: #e11d48;
+    border: 1px solid rgba(225, 29, 72, 0.25);
+}
+
+.prc-icon--amber {
+    background: #fffbeb;
+    color: #d97706;
+    border: 1px solid rgba(217, 119, 6, 0.25);
+}
+
+.prc-icon--emerald {
+    background: #ecfdf5;
+    color: #059669;
+    border: 1px solid rgba(5, 150, 105, 0.25);
+}
+
+.prc-icon--sky {
+    background: #f0f9ff;
+    color: #0284c7;
+    border: 1px solid rgba(2, 132, 199, 0.25);
+}
+
+.prc-icon--indigo {
+    background: #eef2ff;
+    color: #6366f1;
+    border: 1px solid rgba(99, 102, 241, 0.25);
 }
